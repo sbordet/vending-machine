@@ -22,4 +22,9 @@ public class Cash {
         }
         return Optional.of(new Cash(newValue));
     }
+
+    @Override
+    public String toString() {
+        return String.format("%d EUR", value);
+    }
 }

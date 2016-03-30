@@ -39,6 +39,7 @@ public class OOPVendingMachine {
     public static void main(String[] args) throws Exception {
         List<ProductInfo> infos = new ArrayList<>();
         infos.add(new ProductInfo(new Product("Coffee"), new Cash(2)));
+
         OOPVendingMachine machine = new OOPVendingMachine(infos);
         machine.cash(new Cash(10));
         machine.choose(infos.get(0).product);
